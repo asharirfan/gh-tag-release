@@ -16,6 +16,12 @@
     "build": "tsup",
     "dev": "tsx src/index.ts",
     "link": "pnpm link --global",
+    "prepublishOnly": "pnpm test && pnpm build",
+    "publish:npm": "pnpm run prepublishOnly && pnpm publish",
+    "publish:npm:dry-run": "pnpm run prepublishOnly && pnpm publish --dry-run",
+    "release:major": "node scripts/release.mjs major",
+    "release:minor": "node scripts/release.mjs minor",
+    "release:patch": "node scripts/release.mjs patch",
     "test": "vitest run",
     "test:watch": "vitest",
     "unlink": "pnpm unlink --global"
