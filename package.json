@@ -1,6 +1,6 @@
 {
   "name": "gh-tag-release",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Turn git tags into GitHub releases instantly.",
   "type": "module",
   "bin": {
