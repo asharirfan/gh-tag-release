@@ -1,0 +1,51 @@
+{
+  "name": "gh-tag-release",
+  "version": "0.0.1",
+  "description": "Turn git tags into GitHub releases instantly.",
+  "type": "module",
+  "bin": {
+    "gh-tag-release": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "link": "pnpm link --global",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "unlink": "pnpm unlink --global"
+  },
+  "keywords": [
+    "cli",
+    "github",
+    "release",
+    "git",
+    "tags"
+  ],
+  "author": "Ashar Irfan",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asharirfan/gh-tag-release.git"
+  },
+  "homepage": "https://github.com/asharirfan/gh-tag-release#readme",
+  "dependencies": {
+    "commander": "^14.0.3",
+    "ora": "^9.3.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "prettier": "^3.8.1",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^4.0.18"
+  },
+  "packageManager": "pnpm@10.6.5"
+}
