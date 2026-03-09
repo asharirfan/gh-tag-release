@@ -1,3 +1,5 @@
+![gh-tag-release cover](./assets/cover.png)
+
 # gh-tag-release
 
 A fast CLI for turning git tags into GitHub releases with generated release notes and zero CI setup.
